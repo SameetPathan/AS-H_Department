@@ -1,0 +1,98 @@
+ <div div class="d-flex justify-content-between my-2">
+        <div>
+          <img src="./PCCOE_LOGO.jpg" alt="" height="120px" width="150px" />
+        </div>
+        <div class="text-center">
+        <p class="text-center">
+          PIMPRI CHINCHWAD EDUCATION TRUST's<br>
+         <span class="text-danger text-center">PIMPRI CHINCHWAD COLLEGE OF ENGINEERING</span><br>
+         <span >NBA Accredited | NAAC Accredited with 'A' Grade | An Autonomous Institute | AICTE Approved | ISO 9001: 2015 Certified | Permanently Affiliated to SPPU, Pune</span> 
+          </p>
+        </div>
+        <div>
+          <img src="./PCET logo 2_new.png" alt="" height="120px" width="150px" />
+        </div>
+      </div>
+
+
+
+
+       <!-- ======= PEOs start ======= -->
+       <div class="section-title py-2 pb-0" id="peos">
+        <h3 class="text-center"> <span> Objectives</span></h3>
+      </div>
+
+      <section id="featured-services" class="featured-services my-1 text-center text-white shadow-lg " style="background-color: rgb(192, 241, 253);"> 
+          <div class="container " data-aos="fade-up">
+
+            <div class="row d-lg-flex justify-content-center">
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch ml-1  my-1  mb-1 mb-lg-0 border border-secondary rounded bg-success">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+            
+                  <p class="description"> Develop an ability to apply knowledge of mathematics, science and engineering.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch ml-1  my-1  mb-1 mb-lg-0 border border-secondary rounded bg-success">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <!-- <div class="icon"><i class="bx bx-file"></i></div> -->
+
+                  <p class="description">Develop an ability to communicate effectively and work efficiently in team</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch ml-1 my-1 mb-1 mb-lg-0 border border-secondary rounded bg-success">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <!-- <div class="icon"><i class="bx bx-tachometer"></i></div> -->
+                
+                  <p class="description">Understand emerging trends in technologies and to work on modern techniques.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch ml-1  my-1  mb-1 mb-lg-0 border border-secondary rounded bg-success">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <!-- <div class="icon"><i class="bx bx-world"></i></div> -->
+                 
+                  <p class="description">To cultivate values and ethics amongst students.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch ml-1 my-1  mb-1 mb-lg-0 border border-secondary rounded bg-success">
+                <div class="icon-box " data-aos="fade-up" data-aos-delay="400">
+                  <!-- <div class="icon"><i class="bx bx-world"></i></div> -->
+                  <p class="description">Overall personality development of the students.</p>
+                </div>
+              </div>
+
+              
+
+            </div>
+          
+
+          </div>
+        </section>
+        <!-- POEs end -->
+
+        <hr style="border-top:1px solid gray;" class="m-0" />
+
+      <!-- PO start  -->
+      <div class="section-title pt-1 pb-0" id="pos">
+        <h3 class="text-center"> <span>Outcomes </span></h3>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div id="po">
+          <h4>As a result of these best practices and team efforts the Department of Applied Sciences & Humanities is showing good improvements in following aspects:</h4>
+          <ul>
+            <li>Improved quantitative and qualitative results</li>
+            <li>Improved overall attendance and academic discipline among students.</li>
+            <li>Enhanced enthusiasm among students for their participation and involvement in organizing and participating in curricular, co-curricular and extra-curricular activities.</li>
+            <li>Healthy, participative and most conducive environment to create and nurture students development and grooming to proceed on the right path on journey to be competent Engineers and individuals for tomorrow.</li>
+          
+          </ul>
+        </div>
+      </div>
+      <!-- PO end  -->
+    </div>
+  </section>

@@ -1,6 +1,32 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.transparent-bg{
+	background: rgba(204, 226, 230, 0.719);
+    padding: 20px;
+    opacity: 0.3;
+  
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+}
+
+.tr{
+  opacity:0.4;
+  filter:alpha(opacity=40);
+  background-image: url("/assests/images/bg1.jpeg");
+
+  min-height: 500px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
 
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
@@ -440,8 +466,8 @@ body {
   
   #content {
     flex: 0.6;
-    margin: 20px;
-    padding: 30px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 20px;
     /* box-shadow: 1px 1px 1px 1px !important; */
     overflow: hidden !important;
@@ -452,10 +478,7 @@ body {
     text-align: center;
   }
   
-  #content p {
-    font-size: 15px;
-    margin-top: 20px;
-  }
+  
   
   .icon {
     font-size: 48px;
@@ -534,7 +557,7 @@ body {
 
   .bg-img {
     /* The image used */
-    background-image: url("/assests/images/img4.png");
+    background-image: url("/assests/images/bg1.jpeg");
 
     min-height: 500px;
 
@@ -664,3 +687,8 @@ body {
       .social-network a:hover {  
       background: #ff304d;  
       }  
+
+
+
+
+   

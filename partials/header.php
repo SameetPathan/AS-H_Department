@@ -51,78 +51,7 @@
 	<a href="https://www.instagram.com/pccoepune/" target="_blank" class="instagram"><img src="images/pccoe_instagram_social_icon.png" class="img-responsive iconspin" width="30" height="30"></a>
 	<a href="https://www.youtube.com/channel/UCQiPDETOiteTLmAvvPk1WjA" target="_blank" class="youtube"><img src="images/pccoe_youtube_social_icon.png" class="img-responsive iconspin" width="30" height="30"></a>
 </div>
-        <div style="z-index:5999;" class="navigation">
-            <div class="container">
-                <div class="row">
-                    <div style="padding-left:30px;" class="col-lg-12 col-md-10 col-sm-9 col">
-                        <nav class="navbar navbar-expand-lg">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a  href="index.php">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a >About us</a>
-					                    <ul class="sub-menu">
-                                            <li><a href="about.php">About Department</a></li>
-                                            <li><a href="hod.php">HOD Desk</a></li>
-                                            <li><a href="infra.php">Infrastructure</a></li>
-                                            <li><a href="bos.php">BOS- E&TC</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a >People</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="faculty.php">Faculty Profile</a></li>
-                                            <li><a href="adminfaculty.php">Admin Staff Profile</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a >Academics</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="academics.php">B. Tech E&TC Engineering</a></li>
-                                            <li><a href="mtechacademics.php">M. Tech E&TC Engineering</a></li>
-                                            <li><a href="phd/index.php">Ph.D E&TC Engineering</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a >Research</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="researchdev.php">Research and Development</a></li>
-                                            <li><a href="publication.php">Publications and Patents</a></li>
-                                            <li><a href="workshop.php">Workshops</a></li>
-                                            <li><a href="sig.php">Special Interest Groups</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="industry.php">Industry Interaction</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a >Student Corner</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="stdev.php">Student Development and Welfare</a></li>
-                                            <li><a href="stachievements.php">Student Achievements</a></li>
-					                        <li><a href="stactivities.php">Student Activities</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="download.php">Downloads</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="contact.php">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav> <!-- nav -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div>
+        
     </header>
     
     <style>

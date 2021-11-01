@@ -11,20 +11,242 @@
 
     <title>AS&H Department PCCOE </title>
 
+
+
 <style>
-    @media (max-width: 650px) {
-  body {
-    display: block;
-    font-size: 80%;
-  }
-  p {
-    position: relative;
-    margin: -3rem 0 2rem 1rem;
-    padding: 1rem;
-    background: rgba(white, 0.8);
-  }
+  
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio{
+  background: rgb(239, 232, 255);
 }
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #0563bb;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(69, 80, 91, 0.8);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #d7dce1;
+  border-left: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #d7dce1;
+  border-right: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #08470a;
+  font-weight: 700;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #08474f;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+font-weight: 450;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #45505b;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #148af9;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #149ddd;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #149ddd;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+
 </style>
+
+
   </head>
   <body>
    
@@ -172,16 +394,151 @@
 <br>
   
 
-<img src="assests/images/innovation.jpg" alt="#" height="" width="" />
-<p>Text text text...</p>
 
-<img src="assests/images/innovation.jpg" alt="#" height="" width="" />
-<p>Text text text...</p>
+   <!-- ======= Achievements Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
 
-<img src="assests/images/innovation.jpg" alt="#" height="" width="" />
-<p>Text text text...</p>
+        <div class="section-title">
+          <h2>Achievements</h2>
+        </div>
 
-    
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-win">Winners</li>
+              <li data-filter=".filter-part">participations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-win">
+            <div class="portfolio-wrap">
+              <img src="assests/images/innovation.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Runner- up</h4>
+                <p>Event Name: Flair 19<br/>Organized at: Government Polytechnic, Karad(MSBTE)<br/>Event: Paper presentation</p>
+                <div class="portfolio-links">
+                  <a href="assests/images/innovation.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assests/images/innovation.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                <p>Event Name: Inspire 18<br/>Organized at: Government Polytechnic, Karad(MSBTE)<br/>Event: C-War</p>
+                <div class="portfolio-links">
+                  <a href="assests/images/innovation.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assests/images/innovation.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+               <p>Event Name: Avishkar'19<br/>Organized at: Government College of Engineering, Karad<br/>Event: Quizzer Blast</p>
+                <div class="portfolio-links">
+                  <a href="assests/images/innovation.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assests/images/innovation.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                 <p>Event Name: Avishkar'19<br/>Organized at: Government College of Engineering, Karad<br/>Event: Query Master</p>
+                <div class="portfolio-links">
+                  <a href="assests/images/innovation.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assests/images/innovation.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                 <p>Event Name: Avishkar'19<br/>Organized at: Government College of Engineering, Karad<br/>Event: Blind Coding</p>
+                <div class="portfolio-links">
+                  <a href="assests/images/innovation.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assets/img/achievements/part5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                <p>Event Name: Avishkar'19<br/>Organized at: Government College of Engineering, Karad<br/>Event: Code puzzle</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/achievements/part5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assets/img/achievements/part6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                <p>Event Name: Avishkar<br/>Organized at: Zeal Institutes, Pune<br/>Event: Project Competition</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/achievements/part6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assets/img/achievements/part7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                <p>Event Name: Anantya 2021<br/>Pimpri Chinchwad College Of Engineering, Pune<br/>Event: Innovation Quest</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/achievements/part7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-part">
+            <div class="portfolio-wrap">
+              <img src="assets/img/achievements/part8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Participation</h4>
+                <p>Event Name: Anantya 2021<br/>Organized at: Pimpri Chinchwad College Of Engineering, Pune<br/>Event: Perplexo</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/achievements/part8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Runner- up Flair 19 Paper presentation event organized by MSBTE at Government Polytechnic, Karad"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>

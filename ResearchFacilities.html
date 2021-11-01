@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>AS&H Department PCCOE </title>
+
+
+
+<style>
+  
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio{
+  background: rgb(239, 232, 255);
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.portfolio-wrap img{
+  width: 330px;
+  height: 250px;
+}
+
+.portfolio .portfolio-wrap::before {
+  width: 328px;
+  height: 300px;
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #d7dce1;
+  border-left: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #d7dce1;
+  border-right: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #08470a;
+  font-weight: 700;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+</style>
+
+
+  </head>
+  <body>
+   
+
+   <!---->
+   <div class="d-lg-flex justify-content-md-between  "  style="background-color: rgb(15, 15, 168);">
+    <div class="text-center text-white ml-lg-2">
+       <img src="/assests/images/placeholder.png" height="10px" width="10px" alt=""> Pimpri , Pune  
+    </div>
+    <div class="text-center text-white mr-lg-2">
+      <img src="/assests/images/gmail.png" alt="" height="10px" width="10px"> pccoeadmin@gmail.com
+    </div>
+  </div>
+  <!---->
+
+  <!--section 1-->
+
+  <div class="d-lg-flex mt-1">
+    <div class="text-center">
+        <img src="assests/images/PCCOE_LOGO.jpg" height="150px" width="150px" alt="PCCOE LOGO">
+    </div>
+    <div>
+        <p class="text-center">
+          <span style="color: blue;font-size: 25px;font-weight: 500;"> PIMPRI CHINCHWAD EDUCATION TRUST's</span> <br>
+          <span style="color: blue;font-size: 25px;font-weight: 500;">  PIMPRI CHINCHWAD COLLEGE OF ENGINEERING<br></span> 
+         <strong >NBA</strong style="font-style: italic;font-size: 25px;"> Accredited</span> | <span><strong>NAAC</strong style="font-style: italic;"> Accredited with <strong>'A'</strong style="font-style: italic;"> Grade</span> | <span>An <strong style="font-style: italic;">Autonomous</strong> Institute</span> | <span><strong>AICTE</strong> Approved</span> | <span><strong>ISO 9001: 2015</strong> Certified</span> | <span>Permanently Affiliated to <strong>SPPU</strong>, Pune</span>
+            <h1 class="text-center text-success fw-bold"  style="font-size: 30px;">
+                Department of Applied Sciences and Humanities
+            </h1>
+        </p>
+    </div>
+    <div class="text-center">
+        <img src="assests/images/PCET Logo 2_new.png" height="150px" width="150px" alt="PCET LOGO">
+    </div>
+  </div>
+<!---->
+
+<!--Header-->
+  <header >
+     
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(16, 151, 230)" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+
+     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="font-weight: bold;font-size:20px;">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;font-size:20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Academics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;font-size:20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                People
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="People.html">Faculty Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Admin Staff Profile</a>
+           
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;font-size:20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research & Innovations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;font-size:20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Student Corner
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;font-size:20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Examination
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+      
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-weight: bold;font-size:20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Featured Points
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-weight: bold;font-size:20px;">Gallary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-weight: bold;font-size:20px;">Contact Us</a>
+            </li>
+          
+          </ul>
+        </div>
+   
+      </nav>
+</header>
+  
+<!---->
+<br>
+<div>
+      <h3 class="text-center" style="color: #2a6496;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;"> <span> Research Facilities </span></h3>
+  </div>
+
+<br>
+  
+
+
+   <!-- ======= Achievements Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+       
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r1.jpg">
+              <div class="portfolio-info">
+                <h4><strong>SES Techo-make</strong></h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r2.jpg">
+              <div class="portfolio-info">
+                <h4><strong>Distillation Unit</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r3.gif">
+              <div class="portfolio-info">
+                <h4><strong>Colorimeter</strong></h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r4.gif">
+              <div class="portfolio-info">
+               <h4><strong>pH Meter</strong></h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r5.gif">
+              <div class="portfolio-info">
+                <h4><strong>Conducometer</strong></h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r6.gif">
+              <div class="portfolio-info">
+                <h4><strong>Microwave Oven</strong></h4>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r7.gif">
+              <div class="portfolio-info">
+               <h4><strong>Soil Analyzer</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r8.gif">
+              <div class="portfolio-info">
+                <h4><strong>Mufurnace</strong></h4>
+              </div>
+            </div>
+          </div>
+          
+           <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r9.jpg">
+              <div class="portfolio-info">
+                <h4><strong>DC Shunt Motor</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r10.jpg">
+              <div class="portfolio-info">
+                <h4><strong>3 Phase Induction Motor</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r11.jpg">
+              <div class="portfolio-info">
+                <h4><strong>DC Rectifier</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r12.jpg">
+              <div class="portfolio-info">
+               <h4><strong>3 Phase Autotransformer</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r13.jpg">
+              <div class="portfolio-info">
+               <h4><strong>3 Phase ,415V ,Inductive Load</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r14.jpg">
+              <div class="portfolio-info">
+                <h4><strong>3 Phase,440 V ,Resistive load</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r15.jpg">
+              <div class="portfolio-info">
+                <h4><strong>1 Phase 1KVA 230/110 V Transformer</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r16.jpg">
+              <div class="portfolio-info">
+                <h4><strong>1 Phase Autotransformer,0- 270V,10A</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r17.gif">
+              <div class="portfolio-info">
+               <h4><strong>Dual DC Power Supply</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r18.gif">
+              <div class="portfolio-info">
+                <h4><strong>DC resistivity Measurement Setup</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assests\images\ResearchFacilities\r19.gif">
+              <div class="portfolio-info">
+                <h4><strong>Sound Velocity Measurement</strong></h4>
+              </div>
+            </div>
+          </div>
+           
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+   
+  </body>
+
+
+
+</html>

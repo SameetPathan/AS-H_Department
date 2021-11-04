@@ -12,122 +12,6 @@
     <title>AS&H Department PCCOE </title>
 
 
-
-<style>
-  
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio{
-  background: rgb(239, 232, 255);
-}
-
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1; 
-}
-
-.portfolio-wrap img{
-  width: 330px;
-  height: 250px;
-}
-
-.portfolio .portfolio-wrap::before {
-  width: 328px;
-  height: 300px;
-  content: "";
-  background: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #08470a;
-  font-weight: 700;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
-
-</style>
-
-
   </head>
   <body>
    
@@ -266,31 +150,14 @@
       </nav>
 </header>
   
+<br>
+<div>
+      <h3 class="text-center" style="color: #2a6496;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;"> <span> Student Development & Welfare</span></h3>
+  </div>
+
+<br>
 
 
-    <!--====== PAGE BANNER PART START ======-->
-    
-    <section id="page-banner" class="pt-105 pb-110 bg_cover" data-overlay="8" style="background-attachment: fixed;background-image: url(images/achievements.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-banner-cont">
-                        <h2>Student Development and Welfare</h2>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Student Corner</li>
-                                <li class="breadcrumb-item active" aria-current="page">Student development and Welfare</li>
-                            </ol>
-                        </nav>
-                    </div>  <!-- page banner cont -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== PAGE BANNER PART ENDS ======-->
-    <?php include 'partials/sidebar.php';?>
     <!--====== ABOUT PART START ======-->
     
     <section id="about-page" class="pt-70 pb-110">

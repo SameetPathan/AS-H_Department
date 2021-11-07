@@ -571,6 +571,37 @@ body {
     }
 
 
+    .bg-img1 {
+      /* The image used */
+      background-image: url("/assests/images/bg2.png");
+  
+      min-height: 500px;
+  
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      /* Needed to position the navbar */
+      position: relative;
+      }
+
+      .bg-img2 {
+        /* The image used */
+        background-image: url("/assests/images/bg3.png");
+    
+        min-height: 500px;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        /* Needed to position the navbar */
+        position: relative;
+        }
+
+
 
 
     
@@ -690,6 +721,36 @@ body {
       #more {display: none;}
 
 
+.bg-prim{
+  background-color: #00b6dd;
+}
 
 
-
+.slideanim {visibility:hidden;}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}

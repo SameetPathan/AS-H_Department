@@ -1,3 +1,37 @@
+/* New Footer CSS 210827 */
+
+.footer-strip { background: #dfdfdf; height: 4px;}
+footer { background: linear-gradient(to top, #0295bb, #3dc3db); color: #fff; padding-top: 30px; font-size: 16px; }
+footer h3 { border-left: none !important; color: #fff !important; padding-left: 0px !important; padding-bottom: 20px; text-align: left; }
+footer ul { padding-left: 0px; list-style:none; text-decoration:none; }
+footer ul li { border-bottom: 1px dotted #fff; padding-bottom: 2px; }
+footer a { color: #fff !important; font-size: 15px; }
+footer a:hover { color: #152f49 !important; }
+.footer_btm {padding-left:15px; padding-right:15px; background: #152f49;}
+ul.social-network { padding-top: 5px; margin-bottom: 5px; padding-left: 0px; }
+ul.social-network li { display: inline; margin: 0 1px; border-bottom: none; }
+.social-circle li a { display: inline-block; position: relative; margin: 0 auto 0 auto; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; text-align: center; width: 28px; height: 28px; font-size: 14px; }
+.pccoe_map { margin-top:5px; border:0; border-radius:20px; }
+.useful-links { background-color: #000000d6;border-radius: 10px 10px 0px 0px; padding: 2px 15px; font-size: 13px!important; }
+.useful-links a { font-size: 13px!important; }
+.useful-links a:hover { color:#ca6647!important; }
+.useful-links p { margin-bottom: 2px!important; }
+		
+
+/* New Container Row CSS 210828 */
+.container_new {padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;}
+.row_new { margin-right: -15px; margin-left: -15px; }
+@media (min-width: 768px) { 
+	.container_new {width: 750px;}
+}
+@media (min-width: 992px) { 
+	.container_new {width: 970px;}
+}
+@media (min-width: 1200px) { 
+	.container_new {width: 1170px;}
+}
+
+
 /* All PCCOE Websites Comman Header Footer CSS START */
 
 .wmh-top-strip {background: linear-gradient(to left, #0295bb, #3dc3db); color: #fff; padding: 0px;}
@@ -96,3 +130,5 @@
     height: 30px;
   }
  
+
+  

@@ -1,0 +1,26 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+.events h3,.news h3{
+    color: #000000a6;
+}
+.event-box{
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-right: 2rem;
+    padding: .785rem 0;
+    text-align: center;
+    width: 75px;
+}
+.event-box span{
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+}
+
+.event-card h5{
+    color: #f93154;
+}

@@ -8,6 +8,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Department">
+  <script src="https://kit.fontawesome.com/996564cde6.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="css/people.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
@@ -49,13 +53,74 @@
   <script>(function (w, d) { w.CollectId = "618397bca5871e3eda7d5176"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   <!---->
   <style>
-    table,
-    tr,
-    th,
-    td {
-      padding: 10px;
-      border: 1px solid black;
-      border-collapse: collapse;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+      display: grid;
+      border: 1px solid #aaaaaa55;
+    }
+
+    .topnav a {
+      float: left;
+      display: inline-block;
+      color: #000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .topnav {
+        display: block;
+
+      }
+
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
     }
   </style>
 </head>
@@ -97,7 +162,7 @@
       <div class="wmh-wdt-12">
         <div class="wmh-plr-15 wmh-logo">
           <a href="http://www.pccoepune.com/">
-            <img alt="PCCOE LOGO" class="wmh-img-rsp" src="assests/images/PCCOE_LOGO.jpg"></a>
+            <img alt="PCCOE LOGO" class="wmh-img-rsp" src="../assests/images/PCCOE_LOGO.jpg"></a>
         </div>
       </div>
 
@@ -122,7 +187,7 @@
       <div class="wmh-wdt-12">
         <div class="wmh-plr-15 wmh-logo">
           <a href="http://pcet.org.in/" target="_blank">
-            <img src="assests/images/PCET Logo 2_new.png" class="wmh-img-rsp" alt="PCET TRUST LOGO"></a>
+            <img src="../assests/images/PCET Logo 2_new.png" class="wmh-img-rsp" alt="PCET TRUST LOGO"></a>
         </div>
       </div>
 
@@ -149,7 +214,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav ">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" style="color: rgb(247, 242, 242);font-weight: bold;font-size:18px;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html" style="color: rgb(247, 242, 242);font-weight: bold;font-size:18px;">Home <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item dropdown">
@@ -157,25 +222,25 @@
                 Academics
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="AcTeam.html">AC Team</a>
+                <a class="dropdown-item" href="../AcTeam.html">AC Team</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="DAC.html">Departmental Academic Calendar</a>
+                <a class="dropdown-item" href="../DAC.html">Departmental Academic Calendar</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="course.html">courses / syllabus</a>
+                <a class="dropdown-item" href="../course.html">courses / syllabus</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="timetable.html">Timetable</a>
+                <a class="dropdown-item" href="../timetable.html">Timetable</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="results.html">Results(Result/Intake/Topper)</a>
+                <a class="dropdown-item" href="../results.html">Results(Result/Intake/Topper)</a>
                 <div class="dropdown-divider"></div>
-                
-                <a class="dropdown-item" href="E_contents.html">E-Contents</a>
+              
+                <a class="dropdown-item" href="../E_contents.html">E-Contents</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="upcomingevents.html">Upcoming Events</a>
+                <a class="dropdown-item" href="../upcomingevents.html">Upcoming Events</a>
               </div>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/people/people.html"
+              <a class="nav-link" href="/people.html"
                 style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">People</a>
             </li>
 
@@ -184,18 +249,23 @@
                 Research & Innovations
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Research&In.html">Research & Innovation</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Publication&Patent.html">Publications & Patents</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="ResearchFacilities.html">Research Facilities</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="SIG.html">Special Interest Groups</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="ResearchGroups.html">Research Groups</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Achievements.html">Achievements</a>
-              </div>
+                  <a class="dropdown-item" href="R&ICordinator.html">R&I Co-ordinator</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="Research&In.html">Departmental Research Profile</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="Publication&Patent.html">Publications & Patents</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="ResearchFacilities.html">Research Facilities</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Upcoming Events</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="SIG.html">Special Interest Groups</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="ResearchGroups.html">Research Groups</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Research News</a>
+                 
+                </div>
             </li>
 
             <li class="nav-item dropdown">
@@ -203,36 +273,25 @@
                 Student Corner
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="StudDev&Wel.html">Student Development & Welfare</a>
+                <a class="dropdown-item" href="../StudDev&Wel.html">Student Development & Welfare</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="StudAchieve.html">Student Achievements</a>
+                <a class="dropdown-item" href="../StudAchieve.html">Student Achievements</a>
 
               </div>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: #ffffff;font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Student Corner
+                <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Examination
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="StudDev&Wel.html">Student Development & Welfare</a>
+                  <a class="dropdown-item" href="../ExamCordinator.html">Exam Co-ordinator</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="StudAchieve.html">Student Achievements</a>
+                  <a class="dropdown-item" href="../ExamSchedule.html">Schedule of Upcoming  Exam</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="../ExamInstructions.html">Exam Instructions</a>
                 </div>
               </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="color: #ffffff;font-weight: bold;font-size:18px;" href="#"
-                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Examination
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
       
             
             <li class="nav-item dropdown">
@@ -247,10 +306,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallary.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
+              <a class="nav-link" href="../gallary.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Contactus.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
+              <a class="nav-link" href="../Contactus.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
             </li>
           
           </ul>
@@ -260,522 +319,246 @@
   </div>
   <!--header end-->
 
-  <div>
-    <h3 class="text-center"
-      style="color: #2a6496;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;">
-      <span> Research Groups </span></h3>
-  </div>
-
-  <br>
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 1 : Dr. Leena S. Sharma Group | MATHEMATICS </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;">Bio-Mathematics, Computational Biology, Computational Neuroscience Data
-              Analysis, Differential Equations, Numerical Analysis, Finite Element Method.</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;">I am a Professor of Mathematics; a thinker who focuses on the problems that a
-              student faces and blends the information and knowledge together to achieve a solution. Also, I am a
-              Researcher, with 10 years of research experience in the area of Bio-Mathematics, Computational Biology,
-              Computational Neuroscience, Data Analysis, Differential Equations, Numerical Analysis, Finite Element
-              Method.</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-  <!----->
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 2 : Dr. Shaziya Shaikh Group </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;">Graph Theory, Hypercube Networks</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;">I am a faculty of Mathematics in the Department of A S &H, PCCOE, Pune. I
-              worked at MMIT, Pune for about 13 years from 2008 to 2021. I have completed my Ph.D. from Savitribai Phule
-              Pune University under the Guidance of Dr. Y. M. Borse in Graph Theory. I qualified CSIR- NET in 2009</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-
-  <!----->
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 3 : Dr. Arif Bagwan Group </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;">Fractional Calculus, Applied Mathematics, Data Analysis</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-
-  <!----->
-
-  <!----->
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 4 : Dr. S. K. Kale Group </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-
-  <!----->
-
-  <!----->
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 5 : Dr. M. B. Kadam Group </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-
-  <!----->
-
-  <!----->
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 6 : Dr. S. S. Sonar Group </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-
-  <!----->
-
-  <!----->
-
-  <div class="row" style="overflow-x:auto;">
-    <div class="col-lg-12">
-      <div class="section-title mt-30">
-        <table style="margin-left: 200px; width:70%; align-content: center;">
-
-          <tr style="background-color:#23518c; color:#fff;">
-            <td colspan="2">
-              <strong>GROUP 7 : Dr. Priya Joshi Group </strong>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width: 250px; font-weight: bold; background-color:#f4f0ff">Specialization</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Brief</td>
-            <td style="text-align:left;"></td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Link for Registration form</td>
-            <td style="text-align:left;">link</td>
-          </tr>
-
-          <tr>
-            <td style="font-weight: bold; background-color:#f4f0ff">Research News</td>
-            <td style="text-align:left;">News</td>
-          </tr>
-
-          <tr>
-            <td style="text-align:center; background-color:#c2eaff" colspan="2"><strong>GROUP MEMBERS</strong></td>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">Ph.D. Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">M.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-          <tr>
-            <th rowspan="2" style="background-color:#f4f0ff">B.Tech Students</th>
-            <td style="text-align:left;">Name1</td>
-          </tr>
-          <tr>
-            <td style="text-align:left;">Name2
-          </tr>
-          </tr>
-
-        </table>
-      </div> <!-- section title -->
-    </div> <!-- about cont -->
-  </div> <!-- row -->
-
-
-  <!----->
-
-
-
+<br>
+    <div>
+        <h3 class="text-center m-1" style="color: #2a6496;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;"> <span> Research Groups </span></h3>
+      </div>
+
+  <!-- _____________________________Research Groups_____________________________ -->
+  <section>
+    <div class="row">
+      <div class="col-12 col-md-3 p-5 ">
+        <h5 class="text-center font-weight-bold bg-primary text-light py-2 my-0" style="border-radius: 2px;">Research Groups
+        </h5>
+        <br>
+        <div class="nav flex-column nav-pills card topnav " id="myTopnav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+          <div class="nav flex-column nav-pills topnav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+            <a class="nav-link active" id="v-pills-hod-tab" data-toggle="pill" href="#v-pills-hod" role="tab" aria-controls="v-pills-home" aria-selected="true"> Dr. Leena S. Sharma Group</a>
+          
+            
+            <a class=" nav-link border-bottom" id="v-pills-kale-tab" data-toggle="pill" href="#v-pills-kale" role="tab" aria-controls="v-pills-kale" aria-selected="false">Dr. Shaziya Shaikh Group</a>
+            
+            <a class=" nav-link border-bottom" id="v-pills-deshpande-tab" data-toggle="pill" href="#v-pills-deshpande" role="tab" aria-controls="v-pills-deshpande" aria-selected="false">Dr. Arif Bagwan Group</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-9 p-5">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-hod" role="tabpanel" aria-labelledby="v-pills-hod-tab">
+            <div class="card ">
+              <h5 class="card-header bg-primary text-white" style="font-weight: 400;"> Dr. Leena Sharma Group</h5>
+              <div class="card-body">
+                <div class="row no-gutters">
+              
+                  <div class="col-md-6" align="justify-content-center">
+                    <img src="people/assests/images/faculty photos/sharma.png" alt="..." height="200px" width="250px" class="rounded-lg m-4 mx-auto d-block">
+                    <h5 class="text-center">Dr. Leena Sharma</h5>
+                    <h6 class="text-center text-muted">Domain : Mathematics</h6>
+                    
+                  </div>
+                  <div class="col-md-6 ">
+                    <br>
+                    <h4>Specialization</h4>
+                    <ul>
+                      <li>Bio-Mathematics</li>
+                      <li>Computational Biology</li>
+                      <li>Computational Neuroscience</li>
+                      <li>Data Analysis</li>
+                      <li>Differential Equations</li>
+                      <li>Numerical Analysis</li>
+                      <li>Finite Element Method</li>
+
+                    </ul>
+                    
+                  </div>
+                  
+                
+                  <div class="col-md-8  table-responsive">
+                    <table class="table table-borderless mx-auto w-100">
+                      <br>
+                      <tbody>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:16px;">Brief</th>
+                          <td></td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:16px;">Registration link</th>
+                          <td><a href="#">link here</a></td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:20px;">TEAM</th>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">Ph.D. Students</th>
+                          <td style="width: 100px;">1. Name 1</td>
+                          <td style="width: 100px;">2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">M.Tech Students</th>
+                          <td style="width:100px;">1. Name 1</td>
+                          <td style="width:100px;">2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">B.Tech Students</th>
+                          <td style="width:100px;">1. Name 1</td>
+                          <td style="width:100px;">2. Name 2</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="tab-pane fade" id="v-pills-kale" role="tabpanel" aria-labelledby="v-pills-kale-tab">
+            <div class="card ">
+              <h5 class="card-header bg-primary text-white" style="font-weight: 400;">Dr. Shaziya Shaikh Group</h5>
+              <div class="card-body">
+                <div class="row no-gutters">
+
+                  <div class="col-md-6" align="justify-content-center">
+                    <img src="people/assests/images/faculty photos/shajiya.png" alt="..." height="200px" width="250px" class="rounded-lg m-4 mx-auto d-block">
+                    <h5 class="text-center">Dr. Shaziya Shaikh</h5>
+                    <h6 class="text-center text-muted">Domain : Applied Sciences</h6>
+                    
+                  </div>
+                  <div class="col-md-6 ">
+                    <br>
+                    <h4>Specialization</h4>
+                    <ul>
+                      <li>Graph Theory</li>
+                      <li>Hypercube Networks</li>
+                      
+                    </ul>
+                    
+                  </div>
+                   
+                  <div class="col-md-8 table-responsive">
+                    <table class="table table-borderless mx-auto w-100">
+                      <br>
+                      <tbody>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:16px;">Brief</th>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:16px;">Registration link</th>
+                          <td><a href="#">link here</a></td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:20px;">TEAM</th>
+                          
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">Ph.D. Students</th>
+                          <td>1. Name 1</td>
+                          <td>2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">M.Tech Students</th>
+                          <td>1. Name 1</td>
+                          <td>2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">B.Tech Students</th>
+                          <td>1. Name 1</td>
+                          <td>2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">Registration link</th>
+                          <td><a href="#">link here</a></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        
+          <div class="tab-pane fade" id="v-pills-deshpande" role="tabpanel" aria-labelledby="v-pills-deshpande-tab">
+            <div class="card ">
+              <h5 class="card-header bg-primary text-white" style="font-weight: 400;">Dr. Arif Bagwan Group</h5>
+              <div class="card-body">
+                <div class="row no-gutters">
+                  <div class="col-md-6" align="justify-content-center">
+                    <img src="people/assests/images/faculty photos/bagwan.png" alt="..." height="200px" width="250px" class="rounded-lg m-4 mx-auto d-block">
+                    <h5 class="text-center">Dr. Arif Bagwan</h5>
+                    <h6 class="text-center text-muted">Domain : Electrical</h6>
+                    
+                  </div>
+                  <div class="col-md-6 ">
+                    <br>
+                    <h4>Specialization</h4>
+                    <ul>
+                      <li>Fractional Calculus</li>
+                      <li>Applied Mathematics</li>
+                      <li>Data Analysis</li>
+                      
+                    </ul>
+                    
+                  </div>
+                    
+                  <div class="col-md-8 table-responsive">
+                    <table class="table table-borderless mx-auto w-100">
+                     <br>
+                      <tbody>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:16px;">Brief</th>
+
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:16px;">Registration link</th>
+                          <td><a href="#">link here</a></td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row" style="color: #3474eb; font-size:20px;">TEAM</th>
+                          
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">Ph.D. Students</th>
+                          <td>1. Name 1</td>
+                          <td>2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">M.Tech Students</th>
+                          <td>1. Name 1</td>
+                          <td>2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">B.Tech Students</th>
+                          <td>1. Name 1</td>
+                          <td>2. Name 2</td>
+                        </tr>
+                        <tr class="border-bottom">
+                          <th scope="row">Registration link</th>
+                          <td><a href="#">link here</a></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+         
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -795,13 +578,13 @@
             <p><span class="glyphicon glyphicon-envelope"></span> <a
                 href="mailto:pccoeadmin@gmail.com">pccoeadmin@gmail.com</a></p>
 
-            <!--ul class="social-network social-circle">						
-                          <li><a href="#" class="" title="Facebook"><img src="images/sm-icon/facebook.png" class="img-responsive"></a></li>
-                          <li><a href="#" class="" title="Linkedin"><img src="images/sm-icon/linkedin.png" class="img-responsive"></a></li>
-                          <li><a href="#" class="" title="Twitter"><img src="images/sm-icon/twitter.png" class="img-responsive"></a></li>
-                          <li><a href="#" class="" title="Instagram"><img src="images/sm-icon/instagram.png" class="img-responsive"></a></li>
-                          <li><a href="#" class="" title="Youtube"><img src="images/sm-icon/youtube.png" class="img-responsive"></a></li>
-                      </ul-->
+            <!--ul class="social-network social-circle">            
+                        <li><a href="#" class="" title="Facebook"><img src="images/sm-icon/facebook.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Linkedin"><img src="images/sm-icon/linkedin.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Twitter"><img src="images/sm-icon/twitter.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Instagram"><img src="images/sm-icon/instagram.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Youtube"><img src="images/sm-icon/youtube.png" class="img-responsive"></a></li>
+                    </ul-->
 
           </div>
 
@@ -878,7 +661,16 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
   <script src="/css/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -893,6 +685,7 @@
 
 
 </body>
+
 
 
 </html>

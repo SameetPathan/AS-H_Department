@@ -1,0 +1,41 @@
+
+  
+.body h2{
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: #ccc 2px 2px 5px;
+    text-align: center;
+    margin: 2rem;
+
+}
+.body h3{
+    font-family: 'Oswald', sans-serif;
+    text-shadow: #ccc 2px 2px 5px;
+    text-align: center;
+    margin: 2rem;
+
+}
+.body  p{
+    text-align: justify;
+    padding: 1rem 4rem;
+}
+.body .list{
+    list-style-type: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.body .list li{
+    border-left: solid 5px rgb(0, 162, 255);
+    background-color:#9592921f;
+    padding: 1rem;
+    margin: 10px ;
+    font-size: 20px;
+}
+.body img{
+    width:40%;
+}
+@media screen and (max-width: 700px) {
+    .body img{
+        width:100%;
+    }
+  }

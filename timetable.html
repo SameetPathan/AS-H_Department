@@ -46,6 +46,16 @@
   <title>AS&H Department PCCOE </title>
 
   <!---->
+  <style>
+    #blink {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        transition: 0.5s;
+    }
+    
+    
+</style>
   <script>(function (w, d) { w.CollectId = "618397bca5871e3eda7d5176"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   <!---->
 </head>
@@ -245,6 +255,7 @@
   <!--header end-->
 
 
+  <p class="text-center m-lg-5">TimeTable for AY 2020-21<span id="blink"> Uploading Soon</span></p>
 
 
 
@@ -361,7 +372,12 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-
+    <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 500);
+  </script>
 
 </body>
 

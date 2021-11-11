@@ -1,0 +1,20 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+ .personal_website{
+     color:white;
+     text-decoration: none;
+     background: #ff0f7e;
+     border-radius: 20px;
+     padding: 5px 20px;
+     border: 2px solid #fff;
+     font-weight: 500;
+    display: block;
+
+ }
+.personal_website:hover{
+    color:#ff0f7e;
+    background: none;
+    border: 2px solid #ff0f7e;
+}

@@ -49,11 +49,18 @@ document.addEventListener("DOMContentLoaded", function(){
           if ($(window).scrollTop() > 200) {
             $('#nav_bar').addClass('fixed-top');
             $('#nav_bar').addClass('bg-prim');
+            $('#nav_bar').addClass('pl-lg-5');
+          
+       
+          
           }
       
           if ($(window).scrollTop() < 551) {
             $('#nav_bar').removeClass('fixed-top');
             $('#nav_bar').removeClass('bg-prim');
+            $('#nav_bar').removeClass('pl-lg-5');
+           
+            
            
           }
         });
@@ -108,3 +115,22 @@ document.addEventListener("DOMContentLoaded", function(){
  //
 //});
 
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1500); // Change image every 2 seconds
+  }

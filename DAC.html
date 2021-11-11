@@ -48,9 +48,39 @@
   <!---->
   <script>(function (w, d) { w.CollectId = "618397bca5871e3eda7d5176"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   <!---->
+  <style>
+    #blink {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        transition: 0.5s;
+    }
+    
+    
+</style>
+<style>
+.h{
+  text-shadow: 3px 3px 3px #ababab;
+ }
+ body {
+  font-family: Helvetica, sans-serif;
+ 
+
+}
+#ho div:hover {
+
+background-color: #3dc3db;
+
+}
+  
+</style>
+
+
+
+
 </head>
 
-<body>
+<body id="h">
 
   <!--header top-->
   <div class="wmh-top-strip">
@@ -151,7 +181,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="DAC.html">Departmental Academic Calendar</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="course.html">courses / syllabus</a>
+                <a class="dropdown-item" href="course.html">Courses / Syllabus</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="timetable.html">Timetable</a>
                 <div class="dropdown-divider"></div>
@@ -242,9 +272,11 @@
       </nav>
     </div>
   </div>
-  <!--header end-->
-
-
+  <!---->
+ 
+  
+  
+  <p class="text-center m-lg-5">Departmental Academic Calendar For AY 2021 - <span id="blink"> Uploading Soon</span></p>
 
 
 
@@ -361,6 +393,36 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+    <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 500);
+  </script>
+
+
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
 
 
 </body>

@@ -132,5 +132,5 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 1500); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
   }

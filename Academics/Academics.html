@@ -34,10 +34,23 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/code.css">
    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>AS&H Department PCCOE </title>
+    <style>
+      
+element.style {
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #3dc3db;
+    border-color: #3dc3db;
+}
+
+    </style>
   </head>
   <body>
 
@@ -99,7 +112,7 @@
  <div class="container-fluid ml-0 mr-0 pl-lg-4" style="width: 100%;background-color: #3dc3db;">
 
   <div class="ml-lg-5">
-    <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" id='nav_bar'>
+    <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" style="height: 40px;" id='nav_bar'>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -108,49 +121,59 @@
 
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ">
+        <ul class="navbar-nav mr-auto ">
+
+          <!--Homepage-->
           <li class="nav-item active">
-            <a class="nav-link" href="/index.html" style="color: rgb(247, 242, 242);font-weight: bold;font-size:18px;">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/index.html" style="color: #ffffff;font-weight: bold;font-size:18px;">Home
+              <span class="sr-only">(current)</span></a>
           </li>
 
+          <!--Academics-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle "  style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle " style="color: #ffffff;font-weight: bold;font-size:18px;"
+              id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Academics
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="AcTeam.html">AC Team</a>
+              <a class="dropdown-item" href="/Academics/AcTeam.html">AC Team</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="DAC.html">Departmental Academic Calendar</a>
+              <a class="dropdown-item" href="/Academics/Academics.html">Teaching Learning Philosophy</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="course.html">courses / syllabus</a>
+              <a class="dropdown-item" href="/Academics/DAC.html">Departmental Academic Calendar</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="timetable.html">Timetable</a>
+              <a class="dropdown-item" href="/Academics/course.html">courses / syllabus</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="results.html">Results(Result/Intake/Topper)</a>
+              <a class="dropdown-item" href="/Academics/timetable.html">Timetable</a>
               <div class="dropdown-divider"></div>
-            
-              <a class="dropdown-item" href="E_contents.html">E-Contents</a>
+              <a class="dropdown-item" href="/Academics/results.html">Results(Result/Intake/Topper)</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="upcomingevents.html">Upcoming Events</a>
+
+              <a class="dropdown-item" href="/Academics/E_contents.html">E-Contents</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/upcomingevents.html">Upcoming Events</a>
             </div>
           </li>
 
+          <!--People-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"
               style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Peopele
+              People
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/People/people.html">Faculty </a>
-          
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
             </div>
           </li>
 
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!--R&I-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Research & Innovations
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -162,33 +185,41 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchFacilities.html">Research Facilities</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Upcoming Events</a>
+              <a class="dropdown-item" href="/R&I/#">Upcoming Events</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/SIG.html">Special Interest Groups</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchGroups.html">Research Groups</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Research News</a>
-             
+              <a class="dropdown-item" href="/R&I/#">Research News</a>
+
             </div>
           </li>
 
+          <!--Student Corner-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Student Corner
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/Student Corner/SDW Cordinator.html">SDW Co-ordinator</a>
-                    <div class="dropdown-divider"></div>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Student Corner/StudDev&Wel.html">Student Development & Welfare</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Student Corner/StudAchieve.html">Student Achievements</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Student Corner/StudActivity.html">Student Activities</a>
 
             </div>
           </li>
 
+          <!--Examination-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Examination
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -198,13 +229,12 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Examination/ExamInstructions.html">Exam Instructions</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming  Exam</a>
+              <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming Exam</a>
               <div class="dropdown-divider"></div>
             </div>
           </li>
-    
-    
-          
+
+          <!--Featured Points-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#"
                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -228,13 +258,19 @@
                 <a class="dropdown-item" href="/feature/lifeskill.html">Life Skill</a>
             </div>
         </li>
+
+          <!--Gallary-->
           <li class="nav-item">
-            <a class="nav-link" href="/gallary.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
+            <a class="nav-link" href="/gallery/fin_gallery.html"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
           </li>
+
+          <!--Contact Us-->
           <li class="nav-item">
-            <a class="nav-link" href="/Contactus.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
+            <a class="nav-link" href="/Contactus.html"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
           </li>
-        
+
         </ul>
       </div>
     </nav>
@@ -243,9 +279,10 @@
 <!--header end-->
 
   <section>
-    <div class="mb-4">
-        <h3 class="text-center m-1" style="color: #2a6496;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;"> <span> Academics At Applied Science and Humanities </span></h3>
+    <div class="text-center">
+      <h3 class="text-center m-1" style="color: #2a6496;font-size: 35px;font-weight: 600;"> <span>  Academics At Applied Science and Humanities  </span></h3>
     </div>
+  
 
 
     <div class="container d-lg-flex align-content-md-center">
@@ -304,7 +341,7 @@
     
           <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Teaching Learning Philosophy</a>
           <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Academic Governance</a>
-          <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Academics Result</a>
+        
         </div>
       
         <!-- Tab panes -->
@@ -344,110 +381,6 @@
             <div class="shadow p-3 rounded-3"><span class="text-success" style="font-size:24px ;"> The academic policies are scrupulously planned at the institute level. These policies are effectively
                 implemented and monitored by class teachers, course coordinators, academic coordinators and HoD.</span></div>
         </div>
-          <div class="tab-pane" id="messages" role="tabpanel">
-
-            <h3 class="text-success">University Rank Holders </h3>
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">Rank No.</th>
-                    <th scope="col">Name of student</th>
-                    <th scope="col">Class</th>
-                    <th scope="col">Academic Year</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mr. Bhosale Prafull Pratap</td>
-                    <td>Distinction</td>
-                    <td>2014-15</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-              <hr>
-
-              <h3 class="text-success">Toppers of F.E. in Last 8 Years</h3>
-              <table class="table">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">Rank No.</th>
-                      <th scope="col">Name of student</th>
-                      <th scope="col">Class</th>
-                      <th scope="col">Academic Year</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mr. Bhosale Prafull Pratap</td>
-                      <td>Distinction</td>
-                      <td>2014-15</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <hr>
-
-                <h3 class="text-success">E- Content links</h3>
-                <table class="table">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">Rank No.</th>
-                        <th scope="col">Name of student</th>
-                        <th scope="col">Class</th>
-                        <th scope="col">Academic Year</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mr. Bhosale Prafull Pratap</td>
-                        <td>Distinction</td>
-                        <td>2014-15</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-
-
-          </div>
-        </div>
     </div>
         
          
@@ -457,83 +390,123 @@
 
 
    
-
+    </div>
   </section>
   
 
 
+   <!--footer-->
+   <footer>
+
+    <div class="container_new">
+      <div class="row_new">
+        <div class="d-lg-flex justify-content-lg-around">
+
+          <div>
+            <h3 class="heading_h3h"><strong>GET IN TOUCH</strong></h3>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Sector 26, Pradhikaran, <br>
+              &nbsp;&nbsp;&nbsp; Nigdi, Pune, 411044 <br> &nbsp;&nbsp;&nbsp; (Near Akurdi Railway Station)
+            </p>
+            <p><span class="glyphicon glyphicon-earphone"></span> +91 - 9960984347</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> <a
+                href="mailto:pccoeadmin@gmail.com">pccoeadmin@gmail.com</a></p>
+
+            <!--ul class="social-network social-circle">						
+                        <li><a href="#" class="" title="Facebook"><img src="images/sm-icon/facebook.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Linkedin"><img src="images/sm-icon/linkedin.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Twitter"><img src="images/sm-icon/twitter.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Instagram"><img src="images/sm-icon/instagram.png" class="img-responsive"></a></li>
+                        <li><a href="#" class="" title="Youtube"><img src="images/sm-icon/youtube.png" class="img-responsive"></a></li>
+                    </ul-->
+
+          </div>
+
+          <div>
+
+            <h3 class="heading_h3h"><strong>IMPORTANT LINKS</strong></h3>
+            <ul>
+              <li><a href="http://www.pccoepune.com/deandesk.php">Academics</a></li>
+              
+              <li><a href="http://www.pccoepune.com/iii-home.php">Placements</a></li>
+              <li><a href="http://www.pccoepune.com/international-relations.php">International
+                  Relations</a></li>
+              <li><a href="http://www.pccoepune.com/admission-home.php">Admissions</a></li>
+              <li><a href="http://www.pccoepune.com/contact-us.php">Contact Us</a></li>
+            </ul>
+
+          </div>
+
+          <div>
+            <h3 class="heading_h3h"><strong>QUICK LINKS</strong></h3>
+            <ul>
+              <li><a href="http://www.pccoepune.com/syllabi.php">Syllabi</a></li>
+              <li><a href="http://www.pccoepune.com/examinations.php">Examinations</a></li>
+              <li><a href="http://www.pccoepune.com/awards.php">Awards</a></li>
+              <li><a href="http://www.pccoepune.com/nirf.php">NIRF</a></li>
+              <li><a href="http://pcet.org.in/" target="_blank">PCET</a></li>
+            </ul>
+
+          </div>
+
+          <div>
+            <h3 class="heading_h3h"><strong>LOCATION</strong></h3>
+            <iframe class="pccoe_map" width="100%"
+              src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Pimpri+Chinchwad+College+Of+Engineering,+Sector+No.+26,+Pimpri+Chinchwad,+Maharashtra&amp;aq=0&amp;oq=pccoe+pune&amp;sll=18.815427,76.775144&amp;sspn=12.002265,14.128418&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=18.658505,73.769374&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"
+              allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" height="160px" frameborder="0"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+  </footer>
   <!---->
 
-
-  
-  
-
-
-  
- 
-  <footer class="mainfooter" role="contentinfo" style="width: 100%;">  
-    <div class="footer-middle">  
-    <div class="container">  
-      <div class="row">  
-        <div class="col-md-3 col-sm-6">  
-          <div class="footer-pad" >  
-            <h4> Important Links</h4>  
-            <ul class="list-unstyled">  
-              <li> <a href="#"> </a> </li>  
-              <li> <a href="#">Payment Center</a></li>  
-              <li> <a href="#"> Contact Directory </a></li>  
-              <li> <a href="#">Forms</a></li>  
-              <li> <a href="#">News and Updates</a></li>  
-              <li> <a href="#">FAQs</a></li>  
-            </ul>  
-          </div>  
-        </div>  
-        <div class="col-md-3 col-sm-6">  
-          <div class="footer-pad">  
-            <h4> Follow Us </h4>  
-              <ul class="social-network social-circle">  
-               <li> <a href="#"  > <img src="/assests/images/instagram.png" alt="" width="25px" height="25px"> </a> </li>  
-               <li> <a href="#" > <img src="/assests/images/linkedin.png" alt="" width="25px" height="25px"> </a> </li>  
-               <li> <a href="#"> <img src="/assests/images/youtube.png" alt="" width="25px" height="25px"> </a> </li>  
-              </ul>   
-          </div>  
-        </div>  
-        <div class="col-md-3 col-sm-6">  
-          <div class="footer-pad mt-1">  
-        
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2731696127853!2d73.75945111437059!3d18.65173387001882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76c8fa205%3A0x1b210131915734fd!2sPCCOE%20-%20Pimpri%20Chinchwad%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1634908137572!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>  
-        </div>  
-         
-      </div>  
-      <div class="row">  
-      <div class="col-md-12 copy">  
-      <p class="text-center"> Designed By PCET Digital Marketing Team. </p>  
-      </div>  
-      </div>  
-    </div>  
-    </div>  
-  </footer>  
+  <!---->
+  <div class="footer_btm">
+    <div class="wmh-footer">
+      <div class="wmh-mlr-90">
+        <div class="wmh-row">
+          <div class="wmh-wdt-50">
+            <div class="wmh-plr-15">
+              <span align="left">Copyright @ 2021 Pimpri Chinchwad College of Engineering
+                <b>(PCCOE)</b></span>
+            </div>
+          </div>
+          <div class="wmh-wdt-50">
+            <div class="wmh-plr-15">
+              <div class="tright">
+                <span>Designed & Developed by <b>Digital Marketing Team, PCET</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="wmh-cleardiv"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+  <script src="/css/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 
 
- 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-
-
-    <script src="/css/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-  
-  
-  </body>
+</body>
 </html>

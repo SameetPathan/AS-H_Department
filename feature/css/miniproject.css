@@ -6,11 +6,22 @@
     --black:#000;
     --font_heading:Verdana, sans-serif;;
   }
+<<<<<<< HEAD
 *, *:before, *:after {
     box-sizing: border-box;
     font-family: var(--font_heading);
     
       
+=======
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+html, body {
+    margin: 0;
+    padding: 0;
+>>>>>>> 3bb28511098a148e75eb5fbc8d6b18f0a8eaf2ca
 }
 
 #miniproject-body h1{

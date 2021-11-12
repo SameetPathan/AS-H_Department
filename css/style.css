@@ -1,5 +1,10 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Verdana, sans-serif;
+  
+
+}
+p{
+font-family: Verdana, sans-serif;
 }
 .transparent-bg{
 	background: rgba(204, 226, 230, 0.719);

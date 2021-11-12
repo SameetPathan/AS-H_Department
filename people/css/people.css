@@ -1,20 +1,82 @@
+
+  :root {
+    --skyblue: #3dc3db;
+    --navyblue: #160091;
+    --listcolor:#73cbff;
+    --black:#000;
+    --white:#fff;
+    --imageoverly:#0053ba94;
+    --font_heading:Verdana, sans-serif;;
+  }
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    font-family: Verdana, sans-serif;;
  }
  .personal_website{
      color:white;
      text-decoration: none;
-     background: #ff0f7e;
+     background:   var(--skyblue);
      border-radius: 20px;
      padding: 5px 20px;
-     border: 2px solid #fff;
+     border: 1px solid #fff;
      font-weight: 500;
     display: block;
-
+    
  }
 .personal_website:hover{
-    color:#ff0f7e;
+    text-decoration: none;
+    color:  var(--skyblue);
     background: none;
-    border: 2px solid #ff0f7e;
+    border: 1px solid   var(--skyblue);
+}
+
+.card-header{
+    color: var(--white);
+    background-color: var(--skyblue);
+}
+
+#myInput {
+    background-image: url('../images/faculty/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+    width: 90%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    border: 1px solid #ddd; /* Add a grey border */
+    outline: none;
+    margin: 2% 5%;
+    padding: 12px 20px 12px 40px;
+  }
+
+#myUL{
+    list-style-type: none;
+    margin: 1rem 2rem;
+    padding: 0;
+
+}
+#myUL li{
+    margin: 1rem;
+}
+.card-image{
+    width: 150px;
+    height: 150px;
+   
+    box-shadow: 0 0 10px var(--white) ,0 0 50px var(--skyblue);
+}
+.table{
+    margin-top: 20px;
+}
+.button-list a{
+
+    text-align: center;
+}
+@media screen and (min-width: 700px) {
+    .button-list{
+        display: flex;
+        justify-content: center;
+    }
+    .card-image{
+        width: 200px;
+        height: 200px;
+    }
 }

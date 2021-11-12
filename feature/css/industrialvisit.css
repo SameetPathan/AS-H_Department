@@ -1,0 +1,88 @@
+
+  :root {
+    --skyblue: #3dc3db;
+    --navyblue: #160091;
+    --listcolor:#73cbff;
+    --black:#000;
+    --white:#fff;
+    --imageoverly:#0053ba94;
+    --font_heading:Verdana, sans-serif;;
+  }
+  .body{
+    font-family: var(--font_heading);
+
+  }
+  
+.title .half h1,p{
+    margin-left: 4rem;
+    margin-right: 2rem;
+}
+.title .half h1{
+    font-size: 3rem;
+    font-family: var(--font_heading);
+    text-align: center;
+    margin: 2rem;
+    color: var(--navyblue);
+}
+.title .half P{
+    font-size: 1.5rem;
+    font-family: var(--font_heading);
+}
+@media screen and (max-width: 760px) {
+    .title{
+        height: 450px;
+        background-size:100vw 450px ;
+
+    }
+    
+    .title .half h2,h1,p{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .title .half h1{
+        font-size: 4rem;
+        margin-bottom: 5px;
+        margin-left: 1rem;
+    }}
+
+
+.visits{
+    margin:3rem;
+}
+.visit-title{
+    font-size: 2rem;
+    padding: 10% 0; 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    background: none;
+    color: #000;
+}
+
+@media screen and (max-width: 760px) {
+    .title{
+        height: 450px;
+        background-size:100vw 450px ;
+
+    }
+    
+    .title .half h2,h1,p{
+        margin-left: 2rem;
+        margin-right: 20px;
+    }
+    .title .half h1{
+        font-size: 4rem;
+        margin-bottom: 5px;
+
+    }
+    .title .half h2{
+        font-size: 3rem;
+    }
+    .title .half P{
+        font-size: large;
+    }
+    .visit-title{
+        font-size: 1rem;
+        padding: 0;
+    }
+  }

@@ -1,0 +1,52 @@
+
+  :root {
+    --skyblue: #3dc3db;
+    --navyblue: #160091;
+    --font_heading:Verdana, sans-serif;;
+  }
+  body{
+    font-family: var(--font_heading);
+
+  }
+  
+.body h2{
+    font-size: 3rem;
+    font-family: var(--font_heading);
+    text-align: center;
+    margin: 2rem;
+    color: var(--navyblue);
+    background: none;
+}
+.body h3{
+    font-family: var(--font_heading);
+    text-align: center;
+    margin: 2rem;
+    color: var(--navyblue);
+
+}
+.body  p{
+    text-align: justify;
+    margin:1rem 2rem;
+    font-size: 1.3rem;
+    font-family: var(--font_heading);
+}
+.body .list{
+    list-style-type: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.body .list li{
+    border-left: solid 5px var(--skyblue);
+    background-color:#9592921f;
+    padding: 1rem;
+    margin: 10px ;
+    font-size: 20px;
+}
+.body img{
+    width:40%;
+}
+@media screen and (max-width: 700px) {
+    .body img{
+        width:100%;
+    }
+  }

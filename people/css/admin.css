@@ -1,0 +1,44 @@
+
+  :root {
+    --skyblue: #3dc3db;
+    --navyblue: #160091;
+    --listcolor:#73cbff;
+    --black:#000;
+    --white:#fff;
+    --imageoverly:#0053ba94;
+    --font_heading:Georgia, serif;
+  }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: Georgia, serif;
+ }
+
+.card-header{
+    color: var(--white);
+    background-color: var(--skyblue);
+}
+
+
+.card-body{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.card-image{
+    width: 150px;
+    height: 150px;
+   
+    box-shadow: 0 0 10px var(--white) ,0 0 50px var(--skyblue);
+}
+.table{
+    margin-top: 20px;
+}
+@media screen and (min-width: 700px) {
+    
+    .card-image{
+        width: 200px;
+        height: 200px;
+    }
+}

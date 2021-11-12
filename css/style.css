@@ -759,3 +759,11 @@ font-family: Verdana, sans-serif;
     -webkit-transform: translateY(0%);
   }
 }
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #3dc3db;;
+  border-color: #3dc3db;;
+}
+ 

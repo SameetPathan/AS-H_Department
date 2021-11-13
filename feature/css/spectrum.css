@@ -14,9 +14,9 @@
     font-size: 3rem;
     font-family: var(--font_heading);
     text-align: center;
-    margin: 2rem;
     color: var(--navyblue);
-
+    background: none;
+    padding: 0%;
 }
 .body  p{
     text-align: justify;
@@ -43,6 +43,7 @@
     font-family: var(--font_heading);
     margin: 2rem;
     color: var(--navyblue);
+    background: none;
 
 }
 .containeer {

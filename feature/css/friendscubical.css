@@ -13,9 +13,9 @@
     font-size: 3rem;
     font-family: var(--font_heading);
     text-align: center;
-    margin: 2rem;
     color: var(--navyblue);
     background: none;
+    padding: 0%;
 }
 .body h3{
     font-family: var(--font_heading);

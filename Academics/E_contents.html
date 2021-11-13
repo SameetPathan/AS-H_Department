@@ -48,6 +48,14 @@
   <!---->
   <script>(function (w, d) { w.CollectId = "618397bca5871e3eda7d5176"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   <!---->
+  <style>
+      .list-group-item.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #3dc3db;;
+            border-color: #3dc3db;;
+        }
+  </style>
 </head>
 
 <body>
@@ -124,62 +132,72 @@
 
 
 
-  <!--Header-->
-  <div class="container-fluid ml-0 mr-0 pl-lg-4" style="width: 100%;background-color: #3dc3db;">
+   <!--Header-->
+ <div class="container-fluid ml-0 mr-0 pl-lg-4" style="width: 100%;background-color: #3dc3db;">
 
-    <div class="ml-lg-5">
-      <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" id='nav_bar'>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="ml-lg-5">
+    <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" style="height: 40px;" id='nav_bar'>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-            <li class="nav-item active">
-              <a class="nav-link" href="/index.html" style="color: rgb(247, 242, 242);font-weight: bold;font-size:18px;">Home <span class="sr-only">(current)</span></a>
-            </li>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle "  style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Academics
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="AcTeam.html">AC Team</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="DAC.html">Departmental Academic Calendar</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="course.html">courses / syllabus</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="timetable.html">Timetable</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="results.html">Results(Result/Intake/Topper)</a>
-                <div class="dropdown-divider"></div>
-              
-                <a class="dropdown-item" href="E_contents.html">E-Contents</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="upcomingevents.html">Upcoming Events</a>
-              </div>
-            </li>
+          <!--Homepage-->
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html" style="color: #ffffff;font-weight: bold;font-size:18px;">Home
+              <span class="sr-only">(current)</span></a>
+          </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
-                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Peopele
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/People/people.html">Faculty </a>
-            
-              </div>
-            </li>
+          <!--Academics-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " style="color: #ffffff;font-weight: bold;font-size:18px;"
+              id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Academics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Academics/AcTeam.html">AC Team</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/Academics.html">Teaching Learning Philosophy</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/DAC.html">Departmental Academic Calendar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/course.html">courses / syllabus</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/timetable.html">Timetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/results.html">Results(Result/Intake/Topper)</a>
+              <div class="dropdown-divider"></div>
 
-             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-item" href="/Academics/E_contents.html">E-Contents</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/upcomingevents.html">Upcoming Events</a>
+            </div>
+          </li>
+
+          <!--People-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              People
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/People/people.html">Faculty </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
+            </div>
+          </li>
+
+          <!--R&I-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Research & Innovations
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -191,33 +209,41 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchFacilities.html">Research Facilities</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Upcoming Events</a>
+              <a class="dropdown-item" href="/R&I/#">Upcoming Events</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/SIG.html">Special Interest Groups</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchGroups.html">Research Groups</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Research News</a>
-             
+              <a class="dropdown-item" href="/R&I/#">Research News</a>
+
             </div>
           </li>
 
+          <!--Student Corner-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Student Corner
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/Student Corner/SDW Cordinator.html">SDW Co-ordinator</a>
-                    <div class="dropdown-divider"></div>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Student Corner/StudDev&Wel.html">Student Development & Welfare</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Student Corner/StudAchieve.html">Student Achievements</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Student Corner/StudActivity.html">Student Activities</a>
 
             </div>
           </li>
 
+          <!--Examination-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Examination
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -227,13 +253,12 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Examination/ExamInstructions.html">Exam Instructions</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming  Exam</a>
-              
+              <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming Exam</a>
+              <div class="dropdown-divider"></div>
             </div>
           </li>
-    
-      
-            
+
+          <!--Featured Points-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#"
                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -257,81 +282,205 @@
                 <a class="dropdown-item" href="/feature/lifeskill.html">Life Skill</a>
             </div>
         </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/gallary.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Contactus.html" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
-            </li>
-          
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  <!--header end-->
-  <div class="container">
-      <h3 class="text-center text-warning">E - contents</h3>
-  <div class="table-responsive border-0">
-    <table class="table">
 
-        <caption>E-contents</caption>
-        <thead>
-          <tr>
-            <th scope="col">Sr. no</th>
-            <th scope="col">Subjects</th>
-            <th scope="col">Links</th>
+          <!--Gallary-->
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery/fin_gallery.html"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
+          </li>
 
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mathematics</td>
-       <td> <a href="https://www.youtube.com/channel/UCW
-        Zf5VOfmP8sMVJ2GGm70mg"> (mathsmaniapccoe)
+          <!--Contact Us-->
+          <li class="nav-item">
+            <a class="nav-link" href="/Contactus.html"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
+          </li>
 
-                https://www.youtube.com/channel/UCW
-                Zf5VOfmP8sMVJ2GGm70mg</a></td>
-      
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Physics</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Chemistry</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Electronics and Electrical Engineering</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Programming and Problem Solving</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Engineering Graphics</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-
-    </table>
+        </ul>
+      </div>
+    </nav>
   </div>
 </div>
+<!--header end-->
+  
+  <!---->
+  <div class="mt-5">
+    <h3 class="text-center mt-3" style="color: #2a6496;font-size: 35px;"> <span>E-Contents </span></h3>
+  </div>
+<!--1st Section-->
+<section class="m-3">
+    <div class="row">
+        <div class="col-4 ">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                    href="#list-home" role="tab" aria-controls="home">Electrical</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                    href="#list-profile" role="tab" aria-controls="profile">Linear Algebra & Univariate Calculus</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                    href="#list-messages" role="tab" aria-controls="messages">Multivariate Calculus</a>
+               
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <!--1-->
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
 
-<!---->
+
+                  <div class="card border-0">
+                    <div class="card-header">
+                        For More Videos
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Electrical</h5>
+
+                        <a href="https://www.youtube.com/channel/UCUaYSSaDaDMRWBEhu7DBsSA/featured" >
+                            <button type="button" class="btn btn-danger rounded-2">Go to Channel</button>
+                        </a>
+                    </div>
+                </div>
+                  <div class="container-fluid d-lg-flex justify-content-evenly "> 
+                    <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/OD52q3C2Qks?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/RE-ZzQ1wIF8?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/9yXtliPvB7M?controls=0">
+                      </iframe>
+                     </div> 
+                    
+                  </div>
+
+                  <div class="container-fluid mt-2 d-lg-flex justify-content-evenly "> 
+                    <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/7cOj2mf4dE8?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/UKVTGbRZ1yU?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/LZPNR-7ZcZk?controls=0">
+                      </iframe>
+                     </div> 
+                    
+                  </div>
+
+                </div>
+                <!--2-->
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                  <div class="card border-0">
+                    <div class="card-header">
+                        For More Videos
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Linear Algebra & Univariate Calculus</h5>
+
+                        <a href="https://www.youtube.com/channel/UCWZf5VOfmP8sMVJ2GGm70mg" >
+                            <button type="button" class="btn btn-danger rounded-2">Go to Channel</button>
+                        </a>
+                    </div>
+                </div>
+                  <div class="container-fluid d-lg-flex justify-content-evenly "> 
+                    <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/q3jZ-knDwI8?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/cZOv1uW1G4U?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/_DMGDRnKBp8?controls=0">
+                      </iframe>
+                     </div> 
+                    
+                  </div>
+
+                  <div class="container-fluid mt-2 d-lg-flex justify-content-evenly "> 
+                    <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/k2YXnAf0xpg?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/ZFqTnpnoYP0?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/p_lY3GWy6SA?controls=0">
+                      </iframe>
+                     </div> 
+                    
+                  </div>
+
+                </div>
+                <!--3-->
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+
+                  <div class="card border-0">
+                    <div class="card-header">
+                        For More Videos
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Multivariate Calculus</h5>
+
+                        <a href="https://www.youtube.com/channel/UCWZf5VOfmP8sMVJ2GGm70mg" >
+                            <button type="button" class="btn btn-danger rounded-2">Go to Channel</button>
+                        </a>
+                    </div>
+                </div>
+                  <div class="container-fluid d-lg-flex justify-content-evenly "> 
+                    <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/q3jZ-knDwI8?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/cZOv1uW1G4U?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/_DMGDRnKBp8?controls=0">
+                      </iframe>
+                     </div> 
+                    
+                  </div>
+
+                  <div class="container-fluid mt-2 d-lg-flex justify-content-evenly "> 
+                    <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/k2YXnAf0xpg?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/ZFqTnpnoYP0?controls=0">
+                      </iframe>
+                     </div> 
+                     <div>
+                      <iframe width="250" height="250" src="https://www.youtube.com/embed/p_lY3GWy6SA?controls=0">
+                      </iframe>
+                     </div> 
+                    
+                  </div>
+                 
+                </div>
+
+               
+
+            </div>
+        </div>
+    </div>
+    <!---->
+</section>
+<section>
+  <div class="mt-5">
+
+  </div>
+</section>
+
+  <!---->
 
 
 

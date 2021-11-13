@@ -31,11 +31,13 @@ body {
 
 
 .gallery {
-  margin-bottom: 30rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 1.5rem; 
+}
+.carousel-caption h5{
+  background-color: #0005;
 }
 
 .gallery__img {
@@ -82,7 +84,7 @@ body {
 .gallery__item--5 {
   grid-column-start: 1;
   grid-column-end: 5;
-  grid-row-start: 8;
+  grid-row-start: 7;
   grid-row-end: 9;
 
 }
@@ -93,12 +95,22 @@ body {
   grid-row-start: 5;
   grid-row-end: 9;
 }
+.gallery__item--7 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  grid-row-end: 12;
+}
 
-
+.gallery__item--8 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 12;
+}
 .containeer {
     position: relative;
     width: 100%;
-    margin-bottom: 2rem;
   }
   
  
@@ -190,5 +202,19 @@ body {
     grid-row-start: 50;
     grid-row-end: 59;
   
+}
+.gallery__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 60;
+  grid-row-end: 69;
+
+}
+.gallery__item--8 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 70;
+  grid-row-end: 79;
+
 }
 }

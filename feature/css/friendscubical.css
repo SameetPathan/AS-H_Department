@@ -27,7 +27,7 @@
 .body  p{
     text-align: justify;
     margin:1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: var(--font_heading);
 }
 .body .list{

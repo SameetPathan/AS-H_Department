@@ -28,7 +28,7 @@
     background: none;
 }
 .title .half P{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--font_heading);
 }
 @media screen and (max-width: 760px) {

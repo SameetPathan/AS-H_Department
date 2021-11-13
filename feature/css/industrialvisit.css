@@ -13,7 +13,7 @@
 
   }
   
-.title .half h1,p{
+.title .half p{
     margin-left: 4rem;
     margin-right: 2rem;
 }
@@ -25,9 +25,31 @@
     color: var(--navyblue);
 }
 .title .half P{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font_heading);
 }
+
+.list{
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .list li{
+    border-left: solid 5px var(--skyblue);
+    background-color:#9592921f;
+    padding: 1rem;
+    margin: 10px ;
+    font-size: 1rem;
+  }
+
+  .images img{
+      padding: 10px;
+  }
+  
+.card-header{
+    color: var(--white);
+    background-color: var(--skyblue);
+}
 @media screen and (max-width: 760px) {
     .title{
         height: 450px;
@@ -35,38 +57,7 @@
 
     }
     
-    .title .half h2,h1,p{
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .title .half h1{
-        font-size: 4rem;
-        margin-bottom: 5px;
-        margin-left: 1rem;
-    }}
-
-
-.visits{
-    margin:3rem;
-}
-.visit-title{
-    font-size: 2rem;
-    padding: 10% 0; 
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-    background: none;
-    color: #000;
-}
-
-@media screen and (max-width: 760px) {
-    .title{
-        height: 450px;
-        background-size:100vw 450px ;
-
-    }
-    
-    .title .half h2,h1,p{
+    .title .half h1,p{
         margin-left: 2rem;
         margin-right: 20px;
     }
@@ -80,9 +71,5 @@
     }
     .title .half P{
         font-size: large;
-    }
-    .visit-title{
-        font-size: 1rem;
-        padding: 0;
     }
   }

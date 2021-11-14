@@ -42,9 +42,10 @@ document.addEventListener("DOMContentLoaded", function(){
         //to figure out what the scroll position is when exactly you want to fix the nav
         //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
         //you know the position.
+       
         $(window).scroll(function () { 
       
-          console.log($(window).scrollTop());
+        
       
           if ($(window).scrollTop() > 200) {
             $('#nav_bar').addClass('fixed-top');
@@ -61,8 +62,10 @@ document.addEventListener("DOMContentLoaded", function(){
             $('#nav_bar').removeClass('pl-lg-5');
            
             
-           
           }
+           
+          
+
         });
       });
 
@@ -115,22 +118,19 @@ document.addEventListener("DOMContentLoaded", function(){
  //
 //});
 
-  var slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+
+
+
+
+  $(document).ready(function() {
+   
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      // true for mobile device
+      console.log("mobile")
+      $('#navbarSupportedContent').addClass('mo');
+    }else{
+      // false for not mobile device
+      console.log("not")
+      $('#navbarSupportedContent').removeClass('mo');
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
+  });

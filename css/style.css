@@ -765,3 +765,7 @@ font-family: Verdana, sans-serif;
 #nav_bar{
   height: 40px;
 }
+
+.headingsp{
+  color: #2a6496;font-weight: 600;font-size: 35px;
+}

@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/code.css">
   <title>Faculty </title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    p {
+      font-family: Verdana, sans-serif;
+    }
+  </style>
   
 </head>
 
@@ -99,6 +108,7 @@
 <div class="container-fluid ml-0 mr-0 pl-lg-4" style="width: 100%;background-color: #3dc3db;">
 
   <div class="ml-lg-5">
+    <!--Nav Links-->
     <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" style="height: 40px;" id='nav_bar'>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,12 +117,13 @@
 
 
 
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+
         <ul class="navbar-nav mr-auto ">
 
           <!--Homepage-->
           <li class="nav-item active">
-            <a class="nav-link" href="index.html" style="color: #ffffff;font-weight: bold;font-size:18px;">Home
+            <a class="nav-link" href="/index.html" style="color: #ffffff;font-weight: bold;font-size:18px;">Home
               <span class="sr-only">(current)</span></a>
           </li>
 
@@ -127,15 +138,16 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Academics/Academics.html">Teaching Learning Philosophy</a>
               <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/bos.html">Board of Studies</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Academics/DAC.html">Departmental Academic Calendar</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Academics/course.html">courses / syllabus</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Academics/timetable.html">Timetable</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/Academics/results.html">Results(Result/Intake/Topper)</a>
+              <a class="dropdown-item" href="/Academics/results.html">Results</a>
               <div class="dropdown-divider"></div>
-
               <a class="dropdown-item" href="/Academics/E_contents.html">E-Contents</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Academics/upcomingevents.html">Upcoming Events</a>
@@ -164,7 +176,7 @@
               Research & Innovations
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="/R&I/R&ICordinator.html">R&I Co-ordinator</a>
+              <a class="dropdown-item" href="/R&I/R&ICordinator.html">R&I Co-ordinator</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/Research&In.html">Departmental Research Philosophy</a>
               <div class="dropdown-divider"></div>
@@ -174,11 +186,11 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchFacilities.html">Research Facilities</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/R&I/#">Upcoming Events</a>
+              <a class="dropdown-item" href="/R&I/R&IEvents.html">Upcoming Events</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchGroups.html">Research Groups</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/R&I/#">Research News</a>
+              <a class="dropdown-item" href="/R&I/R&INews.html">Research News</a>
 
             </div>
           </li>
@@ -198,7 +210,6 @@
               <a class="dropdown-item" href="/Student Corner/StudAchieve.html">Student Achievements</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Student Corner/StudActivity.html">Student Activities</a>
-
             </div>
           </li>
 
@@ -217,39 +228,40 @@
               <a class="dropdown-item" href="/Examination/ExamInstructions.html">Exam Instructions</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming Exam</a>
-              <div class="dropdown-divider"></div>
+
             </div>
           </li>
 
           <!--Featured Points-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#"
-                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Featured Points
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Featured Points
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/feature/miniproject.html">Project-Based Learning</a>
-        
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/feature/spectrum.html">spectrum</a>
-        
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/feature/industrialvisit.html">Industrial Visit</a>
-                <div class="dropdown-divider"></div>
-        
-                <a class="dropdown-item" href="/feature/languagelab.html">Language lab</a>
-        
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/feature/friendscubical.html">Friend Cubical</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/feature/lifeskill.html">Life Skill</a>
+              <a class="dropdown-item" href="/feature/miniproject.html">Project-Based Learning</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/spectrum.html">spectrum</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/industrialvisit.html">Industrial Visit</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/feature/languagelab.html">Language lab</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/friendscubical.html">Friend Cubical</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/lifeskill.html">Life Skill</a>
             </div>
-        </li>
+          </li>
 
           <!--Gallary-->
           <li class="nav-item">
             <a class="nav-link" href="/gallery/fin_gallery.html"
-              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallery</a>
           </li>
 
           <!--Contact Us-->
@@ -261,6 +273,7 @@
         </ul>
       </div>
     </nav>
+    <!--Nav Links end-->
   </div>
 </div>
 <!--header end-->

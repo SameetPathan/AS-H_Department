@@ -11,7 +11,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    font-family: Georgia, serif;
+    line-height: 26px;
  }
 
 .card-header{

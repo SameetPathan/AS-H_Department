@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<head>
 <title>Language lab</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,16 @@
 <link rel="stylesheet" href="css/languagelab.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<style>
+  body {
+    font-family: Verdana, sans-serif;
+  }
 
-
+  p {
+    font-family: Verdana, sans-serif;
+  }
+</style>
+</head>
 <body>
     <!---->
   <!--header top-->
@@ -95,72 +103,75 @@
   <div class="container-fluid ml-0 mr-0 pl-lg-4" style="width: 100%;background-color: #3dc3db;">
 
     <div class="ml-lg-5">
-      <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" style="height: 40px;" id='nav_bar'>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+     <!--Nav Links-->
+     <nav class="navbar sticky-xl-top navbar-expand-lg navbar-dark" style="height: 40px;" id='nav_bar'>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto ">
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
 
-            <!--Homepage-->
-            <li class="nav-item active">
-              <a class="nav-link" href="/index.html" style="color: #ffffff;font-weight: bold;font-size:18px;">Home
-                <span class="sr-only">(current)</span></a>
-            </li>
+        <ul class="navbar-nav mr-auto ">
 
-            <!--Academics-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " style="color: #ffffff;font-weight: bold;font-size:18px;"
-                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Academics
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Academics/AcTeam.html">AC Team</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Academics/Academics.html">Teaching Learning Philosophy</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Academics/DAC.html">Departmental Academic Calendar</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Academics/course.html">courses / syllabus</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Academics/timetable.html">Timetable</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Academics/results.html">Results(Result/Intake/Topper)</a>
-                <div class="dropdown-divider"></div>
+          <!--Homepage-->
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html" style="color: #ffffff;font-weight: bold;font-size:18px;">Home
+              <span class="sr-only">(current)</span></a>
+          </li>
 
-                <a class="dropdown-item" href="/Academics/E_contents.html">E-Contents</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Academics/upcomingevents.html">Upcoming Events</a>
-              </div>
-            </li>
+          <!--Academics-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " style="color: #ffffff;font-weight: bold;font-size:18px;"
+              id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Academics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Academics/AcTeam.html">AC Team</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/Academics.html">Teaching Learning Philosophy</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/bos.html">Board of Studies</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/DAC.html">Departmental Academic Calendar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/course.html">courses / syllabus</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/timetable.html">Timetable</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/results.html">Results</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/E_contents.html">E-Contents</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Academics/upcomingevents.html">Upcoming Events</a>
+            </div>
+          </li>
 
-            <!--People-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
-                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                People
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/People/people.html">Faculty </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
-              </div>
-            </li>
+          <!--People-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              People
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/People/people.html">Faculty </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
+            </div>
+          </li>
 
-            <!--R&I-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
-                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Research & Innovations
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="/R&I/R&ICordinator.html">R&I Co-ordinator</a>
+          <!--R&I-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Research & Innovations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/R&I/R&ICordinator.html">R&I Co-ordinator</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/Research&In.html">Departmental Research Philosophy</a>
               <div class="dropdown-divider"></div>
@@ -170,93 +181,94 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchFacilities.html">Research Facilities</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/R&I/#">Upcoming Events</a>
+              <a class="dropdown-item" href="/R&I/R&IEvents.html">Upcoming Events</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/R&I/ResearchGroups.html">Research Groups</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/R&I/#">Research News</a>
+              <a class="dropdown-item" href="/R&I/R&INews.html">Research News</a>
 
-              </div>
-            </li>
-
-            <!--Student Corner-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
-                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Student Corner
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Student Corner/SDW Cordinator.html">SDW Co-ordinator</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Student Corner/StudDev&Wel.html">Student Development & Welfare</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Student Corner/StudAchieve.html">Student Achievements</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Student Corner/StudActivity.html">Student Activities</a>
-
-              </div>
-            </li>
-
-            <!--Examination-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
-                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Examination
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/Examination/ExamCordinator.html">Exam Co-ordinator</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Examination/ExamProcessFlow.html">Examination Process Flow</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Examination/ExamInstructions.html">Exam Instructions</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming Exam</a>
-                <div class="dropdown-divider"></div>
-              </div>
-            </li>
-
-            <!--Featured Points-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#"
-                  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Featured Points
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/feature/miniproject.html">Project-Based Learning</a>
-          
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/feature/spectrum.html">spectrum</a>
-          
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/feature/industrialvisit.html">Industrial Visit</a>
-                  <div class="dropdown-divider"></div>
-          
-                  <a class="dropdown-item" href="/feature/languagelab.html">Language lab</a>
-          
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/feature/friendscubical.html">Friend Cubical</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/feature/lifeskill.html">Life Skill</a>
-              </div>
+            </div>
           </li>
 
-            <!--Gallary-->
-            <li class="nav-item">
-              <a class="nav-link" href="/gallery/fin_gallery.html"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallary</a>
-            </li>
+          <!--Student Corner-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Student Corner
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Student Corner/SDW Cordinator.html">SDW Co-ordinator</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Student Corner/StudDev&Wel.html">Student Development & Welfare</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Student Corner/StudAchieve.html">Student Achievements</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Student Corner/StudActivity.html">Student Activities</a>
+            </div>
+          </li>
 
-            <!--Contact Us-->
-            <li class="nav-item">
-              <a class="nav-link" href="/Contactus.html"
-                style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
-            </li>
+          <!--Examination-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Examination
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Examination/ExamCordinator.html">Exam Co-ordinator</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Examination/ExamProcessFlow.html">Examination Process Flow</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Examination/ExamInstructions.html">Exam Instructions</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Examination/ExamSchedule.html">Schedule of Upcoming Exam</a>
 
-          </ul>
-        </div>
-      </nav>
+            </div>
+          </li>
+
+          <!--Featured Points-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Featured Points
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/feature/miniproject.html">Project-Based Learning</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/spectrum.html">spectrum</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/industrialvisit.html">Industrial Visit</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/feature/languagelab.html">Language lab</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/friendscubical.html">Friend Cubical</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/feature/lifeskill.html">Life Skill</a>
+            </div>
+          </li>
+
+          <!--Gallary-->
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery/fin_gallery.html"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Gallery</a>
+          </li>
+
+          <!--Contact Us-->
+          <li class="nav-item">
+            <a class="nav-link" href="/Contactus.html"
+              style="color: rgb(255, 255, 255);font-weight: bold;font-size:18px;">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!--Nav Links end-->
     </div>
   </div>
   <!--header end-->

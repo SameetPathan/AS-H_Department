@@ -52,6 +52,13 @@
   <!---->
   <script>(function (w, d) { w.CollectId = "618397bca5871e3eda7d5176"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   <!---->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_ytBTER1Qr30y30urimAAR')
+</script>
+  <script type="text/javascript" src="/contact.js"></script>
   <style>
  
     
@@ -93,6 +100,7 @@
         p {
           font-family: Verdana, sans-serif;
         }
+        
       </style>
 </head>
 
@@ -355,9 +363,29 @@
 
 
   <!--conatct-->
-  <div class="container shadow mt-3">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfK0Pwccgm3ko73NSgL3P0iKVhsv7_Gee25T2_mkvZoK-iipQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" class="m-3">Loading…</iframe>
-  </div>
+  <div class="container mt-2">
+  <form id="contact-form">
+    <div class="field">
+      <label for="from_name">Name</label>
+      <input type="text" name="from_name" id="from_name">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="field">
+      <label for="number">Number</label>
+      <input type="text" name="number" id="number">
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <input type="text" name="message" id="message">
+    </div>
+   
+  
+    <input type="submit" style="background-color: #3dc3db;;" id="button" onclick="sendform()" value="Send" >
+  </form>
+</div>
   <!---->
   
   

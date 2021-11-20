@@ -5,10 +5,10 @@ window.onload = function() {
         const templateID = 'template_ctsgu3i';
         emailjs.sendForm(serviceID, templateID, this)
             .then(function() {
-                alert("SUCCESS")
+                alert("Thank You !")
             
             }, function(error) {
-                alert("FAILED")
+                alert("FAILED ")
             });
     });
 }

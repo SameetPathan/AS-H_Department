@@ -12,6 +12,16 @@
 
 
   <link rel="stylesheet" href="css/people.css">
+  <style>
+    #blink {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        transition: 0.5s;
+    }
+    
+    
+</style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
@@ -387,12 +397,14 @@
   </div>
   <!--header end-->
 
+  <p class="text-center m-lg-5">Research Group <span id="blink"> Uploading Soon</span></p>
+<!--
 <br>
     <div>
         <h3 class="text-center m-1" style="color: #2a6496;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 35px;"> <span> Research Groups </span></h3>
       </div>
 
-  <!-- _____________________________Research Groups_____________________________ -->
+ 
   <section>
     <div class="row">
       <div class="col-12 col-md-3 p-5 ">
@@ -628,7 +640,7 @@
     </div>
   </section>
 
-
+-->
 
   <!--footer-->
   <footer>
@@ -750,7 +762,12 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-
+    <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 500);
+  </script>
 
 </body>
 

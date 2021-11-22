@@ -134,3 +134,25 @@ document.addEventListener("DOMContentLoaded", function(){
       $('#navbarSupportedContent').removeClass('mo');
     }
   });
+
+
+
+
+  window.addEventListener(
+      "resize", getSizes, false);
+
+    
+
+  //function getSizes() {
+      //let zoom = ((window.outerWidth - 10)
+     //     / window.innerWidth) * 100;
+     // console.log(zoom)
+     // if()
+     // {
+//
+     /// }
+     // if(){
+
+    //  }
+    //  
+ // }

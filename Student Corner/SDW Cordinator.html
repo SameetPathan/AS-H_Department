@@ -461,7 +461,44 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script>
 
+$(document).ready(function() {
+      //change the integers below to match the height of your upper div, which I called
+      //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
+      //to figure out what the scroll position is when exactly you want to fix the nav
+      //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
+      //you know the position.
+     
+      $(window).scroll(function () { 
+    
+      
+    
+        if ($(window).scrollTop() > 200) {
+          $('#nav_bar').addClass('fixed-top');
+          $('#nav_bar').addClass('bg-prim');
+          $('#nav_bar').addClass('pl-lg-5');
+        
+     
+        
+        }
+    
+        if ($(window).scrollTop() < 551) {
+          $('#nav_bar').removeClass('fixed-top');
+          $('#nav_bar').removeClass('bg-prim');
+          $('#nav_bar').removeClass('pl-lg-5');
+         
+          
+        }
+         
+        
+
+      });
+    });
+
+
+    </script>
+    
 
 
 </body>

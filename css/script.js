@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(){
       
         
       
-          if ($(window).scrollTop() > 200) {
+          if ($(window).scrollTop() > 50) {
             $('#nav_bar').addClass('fixed-top');
             $('#nav_bar').addClass('bg-prim');
             $('#nav_bar').addClass('pl-lg-5');
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(){
           
           }
       
-          if ($(window).scrollTop() < 551) {
+          if ($(window).scrollTop() < 51) {
             $('#nav_bar').removeClass('fixed-top');
             $('#nav_bar').removeClass('bg-prim');
             $('#nav_bar').removeClass('pl-lg-5');

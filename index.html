@@ -143,7 +143,16 @@
       }
     }
 
+    #blink {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        transition: 0.5s;
+    }
+
   </style>
+  
+  
 </head>
 
 <body id="h">
@@ -215,16 +224,19 @@
   <!--header top end-->
 
   <div class="d-lg-flex justify-content-lg-start " style="height: 26px;">
-    <div style="background-color: #3dc3db">
-      <span class="text-white container-fluid mt-3 p-2 pt-2 " style="font-size: 16px;">SPOTLIGHT </span>
+    <div style="background-color: #3dc3db" class="shadow-lg">
+      <span class="text-danger container-fluid mt-3 p-2 pt-2 " style="font-size: 16px;font-weight: bold;">SPOTLIGHT </span>
     </div>
     <div class="container-fluid m-0">
       <marquee direction="left" scrollamount="8">
         <h4 class="text-danger" style="font-weight: 300;font-size: 16px;">
-
-          <a class="text-danger" href="AY_Pop_Up.html">Admission AY 2021-22</a>
+          <a class="text-danger mr-3" id="blink" style="font-weight: bold;" >Exam Updates</a>
+          <a class="text-danger mr-3" style="font-weight: bold;" href="FY BTech MTE Exam Schedule Sem I 2021-22.pdf">FY BTech MTE Exam Schedule Sem I 2021-22</a>
+          <a class="text-danger mr-3"  style="font-weight: bold;" href="instruction.pdf">Candidates Examination Instructions</a>
+          <a class="text-danger" style="font-weight: bold;" href="AY_Pop_Up.html">Admission AY 2021-22</a>
        
         </h4>
+       
       </marquee>
     </div>
   </div>
@@ -238,12 +250,12 @@
   <header>
 
     <div class="slider">
-      <div class="container-fluid ml-0 mr-2 pl-lg-2" style="width: 100%;" id='na'>
-        <div class="ml-lg-5">
+      <div class="ml-0 mr-2 pl-lg-2" style="width: 100%;background-color: #3dc3db;" id='na' >
+     
 
 
           <!--Nav Links-->
-          <nav class="navbar navbar-expand-lg navbar-dark" style="height: 40px;" id='nav_bar'>
+          <nav class="navbar navbar-expand-lg navbar-dark"  style="height: 40px;" id='nav_bar'>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -299,7 +311,7 @@
                     <a class="dropdown-item" href="/People/people.html">Faculty </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/People/admin.html">Admin Staff</a>
-                    <a class="trigger_popup_fricc">Click here to show the popup</a>
+                   
                   </div>
                 </li>
 
@@ -411,7 +423,7 @@
           <!--Nav Links end-->
         </div>
 
-      </div>
+     
 
     </div>
 
@@ -1626,6 +1638,13 @@
         
      
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+        <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 500);
+  </script>
       
 
 </body>
